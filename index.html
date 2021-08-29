@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>VideoPlayer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <section id="Video">
+      <div class="conteiner">
+        <div class="Video__row">
+          <div class="Video__body">
+            <div class="videoBackNext">
+              <div class="prev__video">
+                <div class="prev__video_img"></div>
+              </div>
+              <div class="VideoPlayer">
+                <video class="video" src="video/Welcome to the Louvre.mp4"  poster="assets/img/video.jpg" width="100%" height="629" loop></video>
+                <video class="offVideo" src="video/Au Louvre.mp4" width="100%" height="629" loop></video>
+                <video class="offVideo" src="video/Exposition.mp4" width="100%" height="629" loop></video>
+                <video class="offVideo" src="video/Petits contes.mp4" width="100%" height="629" loop></video>
+                <video class="offVideo" src="video/Promenade.mp4"  width="100%" height="629" loop></video>
+                <button class="play__img"></button>
+              </div>
+              <div class="next__video">
+                <div class="next__video_img"></div>
+              </div>
+            </div>
+            <div class="Video__player">
+              <button class="player__back button__player"></button>
+              <button class="player__play button__player"></button>
+              <button class="player__next button__player"></button>
+              <div class="time controls__range">00:00</div>
+              <div class="player__progress-bar controls__range">
+                <input type="range" value="0" min="0" max="100" step="0.1" class="progress">
+              </div>
+              <div class="speed controls__range">
+                <div class="smaller"></div>
+                <div class="speed_value">1.0</div>
+                <div class="bigger"></div>
+              </div>
+              <button class="player__volume button__player"></button>
+              <div class="player__level controls__range">
+                <input type="range" min="0" max="1" step="0.01" class="progress__level">
+              </div>
+              <div class="player__zoom button__player"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
