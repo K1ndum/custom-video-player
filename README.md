@@ -1,1 +1,1 @@
-# custom-video-player
+https://k1ndum.github.io/custom-video-player
