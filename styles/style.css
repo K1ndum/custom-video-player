@@ -12,7 +12,7 @@
 
 .Video__body {
     flex: 0 1 100%;
-    padding-bottom: 13px;
+    padding-bottom: 5px;
     position: relative;
     background-color: var(--color-black);
 }
