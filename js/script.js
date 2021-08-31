@@ -35,7 +35,7 @@ function togglePlay() {
     if (opacity == 1) {
         playImg.style.opacity = 0;
         opacity = 0;
-        togglePlayer.style.cssText = `background-image: url("../assets/svg/pause.jpg");`
+        togglePlayer.style.cssText = `background-image: url("assets/svg/pause.jpg");`
     } else {
         playImg.style.opacity = 1;
         opacity = 1;
@@ -58,13 +58,12 @@ function toggleVolume() {
     if (video.muted === true) {
         video.muted = false;
         playerLevelVolume.value = volumeNow;
-        //console.log(volumeNow);
         playerVolume.style.cssText = '';
 
     } else {
         video.muted = true;
         playerLevelVolume.value = 0;
-        playerVolume.style.cssText = `background-image: url("../assets/svg/off.jpg");`
+        playerVolume.style.cssText = 'background-image: url("assets/svg/off.jpg");'
     }
     playerLevelVolume.blur();
     playerVolume.blur();
